@@ -41,3 +41,16 @@ var argFunc = function(numberOne, numberTwo) {
 
 // 3+2+(2*3)=11
 console.log(argFunc(3,2));
+
+/*
+// Functions 3: update values
+*/
+var startObj = {a: 0, b: 2}
+
+var globalManip = function(ob) {
+  ob.b = 10;
+}
+
+console.log(startObj); // -> {a: 0, b: 2}
+globalManip(startObj);
+console.log(startObj); // -> {a: 0, b: 10}
